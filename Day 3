@@ -1,51 +1,68 @@
 Day 3
-installation of kali linux , virtual box 
-Software Required:
+started with installing VS code 
+For Windows:
+Go to the official website
+Open your browser and visit:
+https://code.visualstudio.com
 
-Oracle VirtualBox
+Click on “Download for Windows”
+The site will automatically detect your OS. Click the download button (usually .exe file).
 
-Kali Linux ISO file
+Run the Installer
+Locate the downloaded file (likely in your Downloads folder) and double-click it.
 
-7-Zip (to extract compressed files if needed)
+Setup Wizard
 
-Installation Steps:
-Install VirtualBox:
+Click "Next"
 
-Download from official site: https://virtualbox.org
+Accept the License Agreement
 
-Run setup and follow the installation wizard.
+Choose the Installation Location or leave it as default
 
-Install 7-Zip:
+Click Next
 
-Used to extract compressed files if Kali is downloaded as a .zip or .7z.
+Select Additional Tasks
+It’s recommended to check these options:
 
-Download Kali Linux ISO:
+Add "Open with Code" to right-click menu
 
-Visit https://www.kali.org
+Add to PATH (important for running code via terminal)
 
-Choose appropriate version (e.g., Installer ISO).
+Install
+Click Install and wait for the setup to finish.
 
-Set Up Kali on VirtualBox:
+Launch VS Code
+Click Finish (make sure "Launch Visual Studio Code" is checked).
 
-Open VirtualBox → Click New
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-Enter name (e.g., Kali), select Linux and version Debian (64-bit)
+moving forward we were asked to open kali linux and open the terminal to execute few basic commands and each command was explained in detail 
+the commands with explanation is listed below:
 
-Assign RAM (at least 2 GB)
+| Command                 | Explanation                                        |
+| ----------------------- | -------------------------------------------------- |
+| ls                    | List files and directories in current directory    |
+| ls -l                 | List in long format (with permissions, size, date) |
+| cd foldername         | Change to a specific directory                     |
+| cd ..                 | Move up one directory                              |
+| pwd                   | Print current working directory                    |
+| mkdir foldername      | Create a new directory                             |
+| rmdir foldername      | Remove an empty directory                          |
+| rm filename           | Delete a file                                      |
+| rm -r foldername      | Delete a folder and its contents                   |
+| cp source destination | Copy a file or folder                              |
+| mv old new            | Move or rename files/folders                       |
+| touch filename        | Create an empty file                               |
 
-Create virtual hard disk (10–20 GB recommended)
+| Command                 | Explanation                                  |
+| ----------------------- | -------------------------------------------- |
+| chmod 755 file        | Change file permissions (read/write/execute) |
+| chown user:group file | Change file ownership                        |
 
-Go to Settings > Storage → Add Kali ISO under Controller: IDE
 
-Start the VM and install Kali.
-
-Problems Faced:
-No major issues during installation.
-
-My personal issue: Thought VirtualBox was installed, but it wasn’t.
-
-Tried to open Kali directly → It didn’t open.
-
-Rechecked and installed VirtualBox correctly.
-
-Had to install 7-Zip to extract the Kali image properly.
+| Command    | Explanation                               |
+| ---------- | ----------------------------------------- |
+| top      | Show running processes                    |
+| ps aux   | Show all running processes                |
+| kill PID | Kill a process using its ID               |
+| htop     | (If installed) interactive process viewer |
